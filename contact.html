@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+	
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498DB;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+ 
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498DB;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980B9;
+        }
+		
+		 #confirmation-message {
+            display: none;
+            color: green;
+            margin-top: 10px;
+        }
+		nav {
+            background-color: #21618C; /* Nav color */
+            width: 150px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            padding-bottom: 0px;
+        }
+
+        
+          nav a {
+    display: block;
+    padding: 30px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    margin: 10px 40px;
+}
+
+        nav a:hover {
+            color: #FF5733;
+			}
+		
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+	<nav>
+        <a href="index.html">Home</a>
+        <a href="copyright.html">Copyright</a>
+        <a href="Public Domain.html">Public Domain</a>
+		  <a href="transition.html">Transtin from Copyright to Public Domain</a>
+		  <a href="Court.html">Copyright Court Cases </a>
+        <a href="contact.html">Contact Us</a>
+		
+		    </nav>
+
+
+    <main>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="streetAddress">Street Address:</label>
+            <input type="text" id="streetAddress" name="streetAddress" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required placeholder="e.g., 1234567890">
+
+            <button type="submit">Submit</button>
+			 <p id="confirmation-message"></p>
+         </form>
+    </main>
+
+    <script>
+        function showConfirmationMessage() {
+            // Get form values
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+
+            // Build the confirmation message
+            var confirmationMessage = 'Your data has been accepted, ' + firstName + ' ' + lastName + '!';
+
+            // Display the confirmation message
+            var confirmationElement = document.getElementById('confirmation-message');
+            confirmationElement.innerHTML = confirmationMessage;
+            confirmationElement.style.display = 'block';
+        }
+    </script>

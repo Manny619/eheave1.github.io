@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+        }
+
+        header {
+            background: url('your-heading-background-image.jpg') center/cover;
+            color: #ffffff; /* Set text color for the heading */
+            text-align: center;
+            padding: 100px 0; /* Adjust as needed */
+        }
+
+        main {
+            padding: 20px; /* Adjust as needed */
+        }
+
+        .above-main {
+            text-align: center;
+            margin-bottom: 20px; /* Adjust as needed */
+        }
+
+        .above-main img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Copyright and it history</h1>
+    </header>
+
+    <div class="above-main">
+        <img src="your-image-above-main.jpg" alt="Image Above Main">
+    </div>
+
+    <main>
+        <!-- Your main content goes here -->
+        <p>Copyright is a type of intellectual property that protects original works of authorship as soon as an author fixes the work in a tangible form of expression. In copyright law, there are a lot of different types of works, including paintings, photographs, illustrations, musical compositions, sound recordings, computer programs, books, poems, blog posts, movies, architectural works, plays, and so much more!
+           When someone creates a product that is viewed as original and that required significant mental activity to create, this product becomes an intellectual property that must be protected from unauthorized duplication. Examples of unique creations include:
+<ol>
+<li>Novels</li>
+<li>Art</li>
+<li>Poetry</li>
+<li>Musical lyrics and compositions</li>
+<li>Computer software</li>
+<li>Graphic designs</li>
+<li>Film</li>
+<li>Original architectural designs</li>
+<li>Website content</li>
+</ol>
+.</p>
+    </main>
+
+</body>
+</html>
